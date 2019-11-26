@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/willjin1796/static/css/main.13e23cdf.chunk.css",
+    "main.js": "/willjin1796/static/js/main.82d6797d.chunk.js",
+    "main.js.map": "/willjin1796/static/js/main.82d6797d.chunk.js.map",
+    "runtime-main.js": "/willjin1796/static/js/runtime-main.59287a32.js",
+    "runtime-main.js.map": "/willjin1796/static/js/runtime-main.59287a32.js.map",
+    "static/js/2.795de1a7.chunk.js": "/willjin1796/static/js/2.795de1a7.chunk.js",
+    "static/js/2.795de1a7.chunk.js.map": "/willjin1796/static/js/2.795de1a7.chunk.js.map",
+    "index.html": "/willjin1796/index.html",
+    "precache-manifest.92302a932560e2183b0d5ac20e454abc.js": "/willjin1796/precache-manifest.92302a932560e2183b0d5ac20e454abc.js",
+    "service-worker.js": "/willjin1796/service-worker.js",
+    "static/css/main.13e23cdf.chunk.css.map": "/willjin1796/static/css/main.13e23cdf.chunk.css.map",
+    "static/media/main.scss": "/willjin1796/static/media/RobotoMono-Medium.7cfbd428.ttf",
+    "static/media/line-awesome.min.css": "/willjin1796/static/media/la-solid-900.bb49393b.ttf",
+    "static/media/w-logo-shadow.png": "/willjin1796/static/media/w-logo-shadow.883126d6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.59287a32.js",
+    "static/js/2.795de1a7.chunk.js",
+    "static/css/main.13e23cdf.chunk.css",
+    "static/js/main.82d6797d.chunk.js"
+  ]
+}
