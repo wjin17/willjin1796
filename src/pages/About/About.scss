@@ -1,0 +1,10 @@
+.about {
+  display: flex;
+  flex-flow: column;
+
+  .about__content {
+    max-width: 568px;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}

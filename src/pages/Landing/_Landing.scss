@@ -1,0 +1,188 @@
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-flow: row;
+}
+
+.landing__text {
+  width: 50%;
+  text-align: center;
+  margin: auto 0;
+
+  h1,
+  h3 {
+    width: 100%;
+  }
+
+  .landing__text__link {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+
+    a {
+      color: inherit;
+
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+}
+
+// Hexagons
+.landing__nav {
+  width: 50%;
+  display: flex;
+  flex: column;
+}
+
+#grid {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612% 0;
+    transform: rotate(-60deg) skewY(30deg);
+    overflow: hidden;
+    visibility: hidden;
+
+    .hexagon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fdbf00;
+      transform: skewY(-30deg) rotate(60deg);
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      //animation: fadein 1s;
+
+      img {
+        left: -100%;
+        right: -100%;
+        height: 100%;
+        width: auto;
+        margin: 0 auto;
+        transition: all 0.6s linear 0s;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.4);
+        display: flex;
+        flex: column;
+
+        h3 {
+          margin: auto;
+          opacity: 100;
+          color: $text-darker;
+        }
+
+        &:hover {
+          h3 {
+            transition: all 0.6s linear 0s;
+            opacity: 100;
+          }
+        }
+      }
+    }
+
+    * {
+      visibility: visible;
+    }
+
+    &:nth-child(3n + 2) {
+      margin: 0 1%;
+    }
+
+    &:nth-child(6n + 4) {
+      margin-left: 0.5%;
+    }
+
+    &:nth-child(6n + 4),
+    &:nth-child(6n + 5),
+    &:nth-child(6n + 6) {
+      margin-top: -6.9285714285%;
+      margin-bottom: -6.9285714285%;
+      transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    }
+
+    &:hover img {
+      height: 150%;
+      transform: translateZ(0) translateX(-25%);
+    }
+
+    &:hover .overlay {
+      transition: all 0.6s linear 0s;
+      background: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .landing__text {
+    width: 100%;
+    height: 40%;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-end;
+  }
+
+  .landing__nav {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+  }
+
+  #grid {
+    width: 95%;
+    padding-left: 10px;
+
+    li .hexagon .overlay {
+      background: rgba(255, 255, 255, 0.4);
+
+      h2 {
+        opacity: 100;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        font-weight: 500;
+      }
+    }
+  }
+}

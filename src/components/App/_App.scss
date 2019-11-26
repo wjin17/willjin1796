@@ -1,0 +1,109 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: $primary;
+
+  h1 {
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    font-family: RobotoMono-Light;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+    font-family: RobotoMono-Light;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-family: RobotoMono-Light;
+  }
+
+  h4 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family: RobotoMono-Light;
+  }
+
+  h5 {
+    font-size: 0.875rem;
+    line-height: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family: RobotoMono-Light;
+  }
+
+  h6 {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    font-family: RobotoMono-Light;
+  }
+
+  p {
+    font-family: RobotoMono-Light;
+  }
+}
+
+.page {
+  min-height: calc(100vh - 120px);
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 160px 0 160px;
+
+  h1 {
+    margin-top: 0px;
+  }
+}
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms linear;
+}
+
+.route-section {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1120px) {
+  .page {
+    min-height: calc(100vh - 100px);
+    padding: 20px 40px 0 40px;
+  }
+}

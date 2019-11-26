@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-flow: column;
+
+  .contact__content {
+    max-width: 568px;
+    margin: 0 auto;
+
+    a {
+      text-decoration: none;
+      &:visited {
+        color: inherit;
+      }
+    }
+
+    h4 {
+      text-align: left;
+    }
+  }
+
+  .contact-email {
+    cursor: pointer;
+  }
+
+  .hover-instructions {
+    opacity: 0;
+    transition: 0.1s linear;
+
+    &.show {
+      opacity: 1;
+    }
+  }
+}
