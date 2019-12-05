@@ -1,4 +1,4 @@
-# Will Jin <img src="/src/static/img/w-logo-shadow.png" width=50px/>
+# <img src="/src/static/img/w-logo-shadow.png" width=40px/> Will Jin
 
 > Portfolio website
 
