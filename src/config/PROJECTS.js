@@ -2,7 +2,6 @@ import Default from "../static/img/w-logo.png"; //SpongeDerp.jpg";
 import ChannelOrange from "../static/img/ChannelOrange.png";
 import AlgoGif from "../static/img/BubbleSortGif.gif";
 import Kombucha from "../static/img/Kombucha.png";
-//raspi bench 3dprinter
 import RaspPi from "../static/img/RaspPi.png";
 import PowerSupply from "../static/img/PowerSupply.png";
 import Printer from "../static/img/3DPrinter.gif";

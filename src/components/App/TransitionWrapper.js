@@ -9,10 +9,11 @@ import Projects from "../../pages/Projects/Projects";
 import Contact from "../../pages/Contact/Contact";
 
 import googleAnalytics from "../../lib/googleAnalytics";
+import google from "../../config/GOOGLE";
 
 const TransitionWrapper = ({ location }) => {
   if (process.env.NODE_ENV === "production") {
-    googleAnalytics.gtag("config", "UA-153458248-1", {
+    googleAnalytics.gtag("config", google.GA_MEASUREMENT_ID, {
       page_title: location.pathname.match(/[^/]*$/g)[0],
       page_path: location.pathname
     });
