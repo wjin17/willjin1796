@@ -1,30 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import useHover from "../../lib/useHover";
 
 const Contact = () => {
-  let showHover;
-
   const [hoverRef, isHovered] = useHover();
+  const [instructionsText, setInstructionsText] = useState("Click to Copy");
+  //const [hoverStyle, setHoverStyle] = useState("show");
+  let hoverStyle;
 
   const updateClipboard = () => {
     const email = document.getElementById("email").innerText;
     navigator.clipboard.writeText(email).then(
       function() {
-        document.getElementById("copy-instructions").innerText = "Copied!";
+        setInstructionsText("Copied!");
       },
-      function() {
+      function(err) {
+        console.log("something bad :c", err);
         /* clipboard write failed */
       }
     );
   };
 
   if (isHovered) {
-    showHover = "show";
+    hoverStyle = "show";
   } else {
-    showHover = "";
-    const copyInstructions = document.getElementById("copy-instructions");
+    hoverStyle = "";
     setTimeout(() => {
-      if (copyInstructions) copyInstructions.innerText = "Click to Copy";
+      setInstructionsText("Click to Copy");
     }, 100);
   }
 
@@ -41,8 +42,11 @@ const Contact = () => {
         >
           willjin1796{"\u0040"}gmail{"\u002e"}com
         </h4>
-        <p id="copy-instructions" className={`hover-instructions ${showHover}`}>
-          Click to Copy
+        <p
+          id="copy-instructions"
+          className={`hover-instructions ${hoverStyle}`}
+        >
+          {instructionsText}
         </p>
         <h2>LinkedIn:</h2>
         <a

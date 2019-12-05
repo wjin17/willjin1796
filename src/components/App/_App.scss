@@ -64,9 +64,9 @@ body {
 
 .page {
   min-height: calc(100vh - 120px);
-  max-width: 1120px;
+  max-width: 568px;
   margin: 0 auto;
-  padding: 40px 160px 0 160px;
+  padding: 40px 160px 1rem 160px;
 
   h1 {
     margin-top: 0px;
@@ -104,6 +104,6 @@ body {
 @media screen and (max-width: 1120px) {
   .page {
     min-height: calc(100vh - 100px);
-    padding: 20px 40px 0 40px;
+    padding: 20px 30px 2rem 30px;
   }
 }

@@ -1,0 +1,257 @@
+.resume {
+  display: flex;
+  flex-flow: column;
+
+  .resume__instruction {
+    margin: 0;
+    font-size: 0.75rem;
+  }
+
+  h2 {
+    margin-top: 1rem;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: 2rem;
+  }
+}
+
+.title__text {
+  margin-left: 1rem;
+}
+
+.education-skills {
+  border-top: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+}
+
+// Education
+.education {
+  flex: 50% 1 1;
+  display: flex;
+  flex-flow: column;
+  background-color: inherit;
+
+  .education__inner {
+    border-top: 1px dashed currentColor;
+    padding: 1rem 0;
+  }
+
+  p {
+    padding: 0 1rem;
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+// Skills
+.skills {
+  flex: 50% 1 1;
+  background-color: inherit;
+
+  .skills__inner {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .skills__list {
+    border-top: 1px dashed currentColor;
+    padding: 1rem;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+}
+
+.levels {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.circle {
+  width: 0.8rem;
+  height: 0.8rem;
+  padding: 2px 2px;
+  .circle__inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid currentColor;
+  }
+
+  .filled {
+    background-color: currentColor;
+  }
+}
+
+// Experience
+.experience {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid currentColor;
+  background-color: inherit;
+
+  .experience__content {
+    border-top: 1px dashed currentColor;
+    padding: 5px;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .experience__company-location {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .organization {
+      font-weight: bold;
+    }
+
+    .location {
+      flex-basis: 40%;
+      text-align: right;
+    }
+  }
+
+  .experience__role-date {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+    .role {
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+  }
+}
+
+.resume__projects {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid currentColor;
+  background-color: inherit;
+
+  .project__content {
+    border-top: 1px dashed currentColor;
+    padding: 5px;
+  }
+
+  .project__title {
+    margin-left: 1rem;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.8rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 495px) {
+  .education {
+    border-bottom: 1px solid currentColor;
+  }
+
+  .date {
+    flex-basis: 60%;
+    display: flex;
+    flex-flow: column;
+    text-align: right;
+
+    .dash {
+      display: none;
+    }
+  }
+
+  .section__title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    .la-plus {
+      margin-right: 1rem;
+      transition: transform 0.125s linear;
+    }
+
+    .rotate {
+      transform: rotate(45deg);
+    }
+  }
+
+  .slideup {
+    max-height: 0;
+    overflow-y: hidden;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .slidedown {
+    //padding: 1rem 0;
+    max-height: 1000vh;
+  }
+}
+
+@media (min-width: 496px) {
+  .date {
+    display: flex;
+    flex-flow: row;
+    text-align: right;
+  }
+
+  .education-skills {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+
+  .skills {
+    border-left: 1px solid currentColor;
+    width: 50%;
+    table-layout: auto;
+    width: 50%;
+  }
+
+  .plus {
+    display: none;
+  }
+}

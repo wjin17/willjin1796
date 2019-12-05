@@ -1,7 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { NAVIGATION } from "../../site-data/NAVIGATION";
-import { SOCIALS } from "../../site-data/SOCIALS";
+import LandingSocials from "./LandingSocials";
+import LandingNav from "./LandingNav";
+
+import { SOCIALS } from "../../config/SOCIALS";
+import { NAVIGATION } from "../../config/NAVIGATION";
 
 const Landing = () => {
   return (
@@ -10,32 +12,12 @@ const Landing = () => {
         <h1>Willie Jin</h1>
         <h3>Software and Electrical Engineer</h3>
         <div className="landing__text__link">
-          {SOCIALS.map(({ link, icon }) => {
-            return (
-              <h1 key={link}>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                  <i className={icon}></i>
-                </a>
-              </h1>
-            );
-          })}
+          <LandingSocials socials={SOCIALS}></LandingSocials>
         </div>
       </div>
       <div className="landing__nav">
         <ul id="grid" className="clear">
-          {NAVIGATION.map(({ title, link }) => {
-            return (
-              <li key={title}>
-                <Link to={link}>
-                  <div className="hexagon">
-                    <div className="overlay">
-                      <h3>{title}</h3>
-                    </div>
-                  </div>
-                </Link>
-              </li>
-            );
-          })}
+          <LandingNav navigation={NAVIGATION}></LandingNav>
         </ul>
       </div>
     </div>

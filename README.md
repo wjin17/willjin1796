@@ -1,6 +1,8 @@
-# Will Jin
+# Will Jin <img src=[logo] width=1rem/>
 
 > Portfolio website
+
+see live demo [here][site-url]
 
 ## Welcome
 
@@ -36,5 +38,7 @@ npm test -- --verbose
 npm run build
 ```
 
+[site-url]: https://wjin17.github.io/willjin1796/
+[logo]: https://raw.githubusercontent.com/wjin17/willjin1796/master/src/static/img/w-logo-shadow.png
 [cra]: https://github.com/facebook/create-react-app
 [react-badge]: https://img.shields.io/static/v1?label=React&message=16.12.0&color=blue

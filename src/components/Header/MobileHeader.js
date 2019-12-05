@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-import { NAVIGATION } from "../../site-data/NAVIGATION";
+import { NAVIGATION } from "../../config/NAVIGATION";
 
 const MobileHeader = () => {
   const [hamburger, toggleHamburger] = useState(false);

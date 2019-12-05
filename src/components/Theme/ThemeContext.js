@@ -11,7 +11,7 @@ export const useTheme = () => useContext(ThemeToggleContext);
 
 const useEffectDarkMode = () => {
   const [themeState, setThemeState] = useState({
-    mode: "dark",
+    mode: "light",
     isThemeLoaded: false
   });
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-import { NAVIGATION } from "../../site-data/NAVIGATION";
+import { NAVIGATION } from "../../config/NAVIGATION";
 
 const FullHeader = () => {
   return (
