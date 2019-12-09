@@ -32,6 +32,10 @@
   }
 }
 
+.social__icon:hover {
+  color: $text-dark;
+}
+
 // Hexagons
 .landing__nav {
   width: 50%;
@@ -127,8 +131,8 @@
     }
 
     &:hover .overlay {
-      transition: all 0.6s linear 0s;
-      background: rgba(255, 255, 255, 0.6);
+      transition: all 0.5s linear 0s;
+      background: rgba(255, 255, 255, 0.7);
     }
   }
 }

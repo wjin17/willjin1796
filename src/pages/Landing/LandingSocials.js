@@ -12,7 +12,7 @@ const SocialLink = ({ link, icon }) => {
   return (
     <h1>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <i className={icon}></i>
+        <i className={`social__icon ${icon}`}></i>
       </a>
     </h1>
   );

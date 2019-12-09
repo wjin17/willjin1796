@@ -51,6 +51,10 @@
   padding: 1rem;
   border-top: 1px dashed currentColor;
 
+  &:first-child {
+    border: none;
+  }
+
   h4 {
     margin: 0 1rem;
   }

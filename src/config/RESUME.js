@@ -1,4 +1,29 @@
 /* 
+  //Resume Download
+    {
+      name: <Resume Name>
+      filename: <Saved File Name>
+      file: <Which File>
+    } 
+*/
+
+import SWResume from "../static/files/Jin.Willie.Resume.Nov2019.3.pdf";
+import HWResume from "../static/files/Jin.Willie.EEResume.Nov2019.pdf";
+
+export const DOWNLOAD = [
+  {
+    name: "Software Resume",
+    filename: "Jin.Willie.Resume.Software",
+    file: SWResume
+  },
+  {
+    name: "Hardware Resume",
+    filename: "Jin.Willie.Resume.Hardware",
+    file: HWResume
+  }
+];
+
+/* 
   //Skills Template
     {
       name: <Skill Name>

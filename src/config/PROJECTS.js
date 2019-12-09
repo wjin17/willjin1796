@@ -67,7 +67,7 @@ export const SIDE_PROJECTS = [
     img: RaspPi,
     description: [
       "Installed PiHole to create a DHCP server to block content delivered from advertiser URLs",
-      "Set Pi as DHCP server instead of the router to block content for all devices"
+      "Set router to use Pi as DHCP server to block ads on all devices"
     ]
   },
   {
