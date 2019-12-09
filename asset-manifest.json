@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/willjin1796/static/css/main.394a8b07.chunk.css",
-    "main.js": "/willjin1796/static/js/main.412ac01f.chunk.js",
-    "main.js.map": "/willjin1796/static/js/main.412ac01f.chunk.js.map",
+    "main.css": "/willjin1796/static/css/main.acdf5ea4.chunk.css",
+    "main.js": "/willjin1796/static/js/main.57ab76e9.chunk.js",
+    "main.js.map": "/willjin1796/static/js/main.57ab76e9.chunk.js.map",
     "runtime-main.js": "/willjin1796/static/js/runtime-main.59287a32.js",
     "runtime-main.js.map": "/willjin1796/static/js/runtime-main.59287a32.js.map",
-    "static/js/2.1210dde7.chunk.js": "/willjin1796/static/js/2.1210dde7.chunk.js",
-    "static/js/2.1210dde7.chunk.js.map": "/willjin1796/static/js/2.1210dde7.chunk.js.map",
+    "static/js/2.f9ba720e.chunk.js": "/willjin1796/static/js/2.f9ba720e.chunk.js",
+    "static/js/2.f9ba720e.chunk.js.map": "/willjin1796/static/js/2.f9ba720e.chunk.js.map",
     "index.html": "/willjin1796/index.html",
-    "precache-manifest.9b5c44bfaea35f5809b23429e7326440.js": "/willjin1796/precache-manifest.9b5c44bfaea35f5809b23429e7326440.js",
+    "precache-manifest.d9be7044ba71c6a7978eeca2ff8e72ab.js": "/willjin1796/precache-manifest.d9be7044ba71c6a7978eeca2ff8e72ab.js",
     "service-worker.js": "/willjin1796/service-worker.js",
-    "static/css/main.394a8b07.chunk.css.map": "/willjin1796/static/css/main.394a8b07.chunk.css.map",
-    "static/media/3DPrinter.gif": "/willjin1796/static/media/3DPrinter.36bf4619.gif",
+    "static/css/main.acdf5ea4.chunk.css.map": "/willjin1796/static/css/main.acdf5ea4.chunk.css.map",
+    "static/media/3DPrinter.gif": "/willjin1796/static/media/3DPrinter.a1b194df.gif",
     "static/media/BubbleSortGif.gif": "/willjin1796/static/media/BubbleSortGif.f521a417.gif",
     "static/media/ChannelOrange.png": "/willjin1796/static/media/ChannelOrange.068292d3.png",
+    "static/media/Jin.Willie.EEResume.Nov2019.pdf": "/willjin1796/static/media/Jin.Willie.EEResume.Nov2019.1152595a.pdf",
+    "static/media/Jin.Willie.Resume.Nov2019.3.pdf": "/willjin1796/static/media/Jin.Willie.Resume.Nov2019.3.330eea47.pdf",
     "static/media/Kombucha.png": "/willjin1796/static/media/Kombucha.5ee751c6.png",
     "static/media/PowerSupply.png": "/willjin1796/static/media/PowerSupply.465311df.png",
     "static/media/RaspPi.png": "/willjin1796/static/media/RaspPi.5a502911.png",
@@ -24,8 +26,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.59287a32.js",
-    "static/js/2.1210dde7.chunk.js",
-    "static/css/main.394a8b07.chunk.css",
-    "static/js/main.412ac01f.chunk.js"
+    "static/js/2.f9ba720e.chunk.js",
+    "static/css/main.acdf5ea4.chunk.css",
+    "static/js/main.57ab76e9.chunk.js"
   ]
 }
