@@ -7,7 +7,7 @@
     } 
 */
 
-import SWResume from "../static/files/Jin.Willie.Resume.Nov2019.3.pdf";
+import SWResume from "../static/files/Jin.Willie.Resume.Dec2019.3.pdf";
 import HWResume from "../static/files/Jin.Willie.EEResume.Nov2019.pdf";
 
 export const DOWNLOAD = [
@@ -36,6 +36,7 @@ export const SKILLS = [
   { name: "CSS/SCSS", level: 4 },
   { name: "JavaScript", level: 5 },
   { name: "Python", level: 2 },
+  { name: "Golang", level: 3 },
   { name: "React", level: 4 },
   { name: "GraphQL", level: 4 },
   { name: "MongoDB", level: 4 },
@@ -82,7 +83,7 @@ export const EXPERIENCE = [
       "Designed site for a restaurant to assist owner in online advertising",
       "Website gains +1,600 visits a month, +1,300 unique visitors"
     ],
-    url: "https://www.kukaizayaka.com/"
+    url: "https://www.kukaizakaya.com/"
   },
   {
     organization: "Cisco Systems",

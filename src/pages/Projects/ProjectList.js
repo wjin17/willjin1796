@@ -23,7 +23,7 @@ const Project = ({ project }) => {
       <div className="project__image">
         <ProjectImage image={img}></ProjectImage>
       </div>
-      {projectTitle}
+      <div className="project__title">{projectTitle}</div>
       <ul className="project__description">
         {description.map((desc, index) => {
           return (

@@ -2,7 +2,7 @@
 
 > Portfolio website
 
-see live demo [here][site-url]
+see live site [here][site-url]
 
 ## Welcome
 

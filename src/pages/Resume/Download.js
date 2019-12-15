@@ -1,5 +1,14 @@
 import React from "react";
 
+/* 
+  //Resume Download
+    {
+      name: <Resume Name>
+      filename: <Saved File Name>
+      file: <Which File>
+    } 
+*/
+
 const DownloadLink = ({ fileProps }) => {
   const { file, fileName, name } = fileProps;
   return (

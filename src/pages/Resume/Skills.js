@@ -28,6 +28,16 @@ const SkillLevel = ({ level }) => {
   );
 };
 
+const Skill = ({ skill }) => {
+  const { name, level } = skill;
+  return (
+    <div className="skills__inner">
+      <p>{name}</p>
+      <SkillLevel level={level}></SkillLevel>
+    </div>
+  );
+};
+
 const Skills = ({ skills }) => {
   const [hideInner, toggleInner] = useState(true);
   const innerClass = hideInner ? "slideup" : "slideup slidedown";
@@ -42,15 +52,9 @@ const Skills = ({ skills }) => {
       </div>
       <div className={innerClass}>
         <div className="skills__list">
-          {skills.map((skill, index) => {
-            const { name, level } = skill;
-            return (
-              <div className="skills__inner" key={index}>
-                <p>{name}</p>
-                <SkillLevel level={level}></SkillLevel>
-              </div>
-            );
-          })}
+          {skills.map((skill, index) => (
+            <Skill key={index} skill={skill}></Skill>
+          ))}
         </div>
       </div>
     </div>

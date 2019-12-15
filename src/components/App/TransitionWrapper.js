@@ -7,6 +7,7 @@ import About from "../../pages/About/About";
 import Resume from "../../pages/Resume/Resume";
 import Projects from "../../pages/Projects/Projects";
 import Contact from "../../pages/Contact/Contact";
+import NotFound from "../../pages/NotFound/NotFound";
 
 import googleAnalytics from "../../lib/googleAnalytics";
 import google from "../../config/GOOGLE";
@@ -27,10 +28,11 @@ const TransitionWrapper = ({ location }) => {
       >
         <Switch location={location}>
           <Route exact path="/" component={Landing} />
-          <Route path="/about" component={About} />
-          <Route path="/resume" component={Resume} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/resume" component={Resume} />
+          <Route exact path="/projects" component={Projects} />
+          <Route exact path="/contact" component={Contact} />
+          <Route component={NotFound} />
         </Switch>
       </CSSTransition>
     </TransitionGroup>

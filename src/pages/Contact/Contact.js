@@ -4,7 +4,6 @@ import useHover from "../../lib/useHover";
 const Contact = () => {
   const [hoverRef, isHovered] = useHover();
   const [instructionsText, setInstructionsText] = useState("Click to Copy");
-  //const [hoverStyle, setHoverStyle] = useState("show");
   let hoverStyle;
 
   const updateClipboard = () => {
@@ -14,7 +13,7 @@ const Contact = () => {
         setInstructionsText("Copied!");
       },
       function(err) {
-        console.log("something bad :c", err);
+        console.error("Copy failed :c", err);
         /* clipboard write failed */
       }
     );

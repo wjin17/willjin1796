@@ -25,7 +25,7 @@ const ExperienceItem = ({ experience }) => {
     url
   } = experience;
   const title = url ? (
-    <a href="url" target="_blank">
+    <a href={url} target="_blank" rel="noopener noreferrer">
       <h4>{organization}*</h4>
     </a>
   ) : (
@@ -34,8 +34,8 @@ const ExperienceItem = ({ experience }) => {
   return (
     <div className="experience__content">
       <div className="experience__company-location">
-        {title}
-        <h4 className="">{location}</h4>
+        <div className="company">{title}</div>
+        <h4>{location}</h4>
       </div>
       <div className="experience__role-date">
         <h4 className="role">{role}</h4>
@@ -72,11 +72,12 @@ const Experience = ({ experience }) => {
       </div>
       <div className={innerClass}>
         <div className="experience__inner">
-          {experience.map((exp, index) => {
-            return (
-              <ExperienceItem key={index} experience={exp}></ExperienceItem>
-            );
-          })}
+          {experience.map((experience, index) => (
+            <ExperienceItem
+              key={index}
+              experience={experience}
+            ></ExperienceItem>
+          ))}
         </div>
       </div>
     </div>

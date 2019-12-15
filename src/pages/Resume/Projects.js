@@ -1,5 +1,13 @@
 import React, { useState } from "react";
 
+/* 
+  //Projects Template
+    [
+      { title: "", img: "", link: "", description: ["",""]},
+      { title: "", img: "", link: "", description: ["",""]}
+    ] 
+*/
+
 const Project = ({ project }) => {
   const { title, link, description } = project;
   const projectTitle = link ? (
@@ -39,9 +47,9 @@ const Projects = ({ projects }) => {
       </div>
       <div className={innerClass}>
         <div className="projects__inner">
-          {projects.map((project, index) => {
-            return <Project key={index} project={project}></Project>;
-          })}
+          {projects.map((project, index) => (
+            <Project key={index} project={project}></Project>
+          ))}
         </div>
       </div>
     </div>
