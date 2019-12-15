@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c51f64f634a877beeb5160ec2e8a37d",
+    "revision": "fccf89d7c222ac49c03d85557eb20c0a",
     "url": "/willjin1796/index.html"
   },
   {
-    "revision": "61b2e60f3d1a061fbfaa",
+    "revision": "20e42064d9762a9373e8",
     "url": "/willjin1796/static/css/main.fa51f644.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/willjin1796/static/js/2.f9ba720e.chunk.js"
   },
   {
-    "revision": "61b2e60f3d1a061fbfaa",
-    "url": "/willjin1796/static/js/main.b791b3f7.chunk.js"
+    "revision": "20e42064d9762a9373e8",
+    "url": "/willjin1796/static/js/main.7ebe1de9.chunk.js"
   },
   {
     "revision": "54570475a907acf83863",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/willjin1796/static/media/Jin.Willie.EEResume.Nov2019.1152595a.pdf"
   },
   {
-    "revision": "330eea474d4b0044637e926945fcd48f",
-    "url": "/willjin1796/static/media/Jin.Willie.Resume.Nov2019.3.330eea47.pdf"
+    "revision": "cd42ec1e3b8e5a982b5ad8f5be37a5af",
+    "url": "/willjin1796/static/media/Jin.Willie.Resume.Dec2019.3.cd42ec1e.pdf"
   },
   {
     "revision": "5ee751c673331bf5de1bdf773d2e7ff2",
