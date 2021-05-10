@@ -4,6 +4,8 @@ module.exports = {
     title: `Willie Jin`,
     description: `This is my personal website`,
     author: `Willie Jin`,
+    siteUrl: `https://wjin17.github.io/willjin1796`,
+    keywords: [`Willie Jin`, `Software Engineer`, `Entrepreneurship`],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
