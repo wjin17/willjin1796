@@ -3,6 +3,8 @@ import * as React from "react"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
+import Me from "../../static/Me.png"
+
 const NotFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
@@ -13,7 +15,7 @@ const NotFoundPage = () => (
           <p>This route doesn't exist</p>
         </div>
         <div className="mx-auto my-auto">
-          <img className="sm:max-w-xs max-h-1/4" src={"/me.png"} />
+          <img className="sm:max-w-xs max-h-1/4" src={Me} />
         </div>
       </div>
     </div>

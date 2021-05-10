@@ -1,30 +1,14 @@
 import React, { Fragment } from "react"
 import { Link } from "gatsby"
 import { Popover, Transition } from "@headlessui/react"
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  PhoneIcon,
-  PlayIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from "@heroicons/react/outline"
-import { ChevronDownIcon } from "@heroicons/react/solid"
+import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
 import { SunIcon, MoonIcon, GithubIcon, LinkedInIcon } from "./icons"
-//import Me from "../images/Me.png"
+
+import Me from "../../static/me.png"
+import Resume from "../../static/Willie.Jin.Resume.April.2021.pdf"
 
 import { useTheme } from "../hooks/useTheme"
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ")
-}
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useTheme()
@@ -38,7 +22,7 @@ const Header = () => {
                 <div className="h-12 w-12">
                   <Link to="/">
                     <span className="sr-only">Workflow</span>
-                    <img src={"/me.png"} alt="cartoon me" />
+                    <img src={Me} alt="cartoon me" />
                   </Link>
                 </div>
               </div>
@@ -65,11 +49,7 @@ const Header = () => {
                 >
                   <LinkedInIcon darkMode={darkMode} />
                 </a>
-                <a
-                  href="/Willie.Jin.Resume.April.2021.pdf"
-                  target="_blank"
-                  rel="noopener"
-                >
+                <a href={Resume} target="_blank" rel="noopener">
                   <p className="text-black dark:text-white mx-3">Resume</p>
                 </a>
                 <Link to="/blog">
@@ -110,7 +90,7 @@ const Header = () => {
                     <div className="h-12 w-12">
                       <Link to="/">
                         <span className="sr-only">Workflow</span>
-                        <img src={"/me.png"} alt="cartoon me" />
+                        <img src={Me} alt="cartoon me" />
                       </Link>
                     </div>
                     <div className="-mr-2">
@@ -124,11 +104,7 @@ const Header = () => {
                 <div className="py-3 px-5 space-y-6">
                   <div>
                     <div className="mb-6 text-right">
-                      <a
-                        href="/Willie.Jin.Resume.April.2021.pdf"
-                        target="_blank"
-                        rel="noopener"
-                      >
+                      <a href={Resume} target="_blank" rel="noopener">
                         <h3 className="mx-3 font-bold">Resume</h3>
                       </a>
                     </div>
