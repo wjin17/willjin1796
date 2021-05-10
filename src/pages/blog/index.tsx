@@ -24,7 +24,9 @@ const BlogList = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   return (
     <Layout>
-      <div className="min-h-screen px-10 pt-40 pb-20 sm:px-14">{Posts}</div>
+      <div className="min-h-screen px-10 pt-20 sm:pt-32 pb-20 sm:px-14">
+        {Posts}
+      </div>
     </Layout>
   )
 }
