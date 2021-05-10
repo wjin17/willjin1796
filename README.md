@@ -40,4 +40,4 @@ gatsby build
 
 [site-url]: https://wjin17.github.io/willjin1796/
 [gatsby]: https://www.gatsbyjs.com/
-[react-badge]: https://img.shields.io/static/v1?label=React&message=16.12.0&color=blue
+[react-badge]: https://img.shields.io/static/v1?label=React&message=17.0.1&color=blue

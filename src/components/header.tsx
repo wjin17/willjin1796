@@ -5,7 +5,7 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline"
 
 import { SunIcon, MoonIcon, GithubIcon, LinkedInIcon } from "./icons"
 
-import Me from "../../static/me.png"
+import Me from "../../static/Me.png"
 import Resume from "../../static/Willie.Jin.Resume.April.2021.pdf"
 
 import { useTheme } from "../hooks/useTheme"
@@ -37,7 +37,7 @@ const Header = () => {
                   className="h-8 w-8 sm:h-8 mx-3"
                   href="https://github.com/wjin17"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <GithubIcon darkMode={darkMode} />
                 </a>
@@ -45,11 +45,11 @@ const Header = () => {
                   className="h-8 w-8 sm:h-8 mx-3"
                   href="https://www.linkedin.com/in/willjin1796/"
                   target="_blank"
-                  rel="noopener"
+                  rel="noopener noreferrer"
                 >
                   <LinkedInIcon darkMode={darkMode} />
                 </a>
-                <a href={Resume} target="_blank" rel="noopener">
+                <a href={Resume} target="_blank" rel="noopener noreferrer">
                   <p className="text-black dark:text-white mx-3">Resume</p>
                 </a>
                 <Link to="/blog">
@@ -104,7 +104,11 @@ const Header = () => {
                 <div className="py-3 px-5 space-y-6">
                   <div>
                     <div className="mb-6 text-right">
-                      <a href={Resume} target="_blank" rel="noopener">
+                      <a
+                        href={Resume}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <h3 className="mx-3 font-bold">Resume</h3>
                       </a>
                     </div>
@@ -117,7 +121,7 @@ const Header = () => {
                       <a
                         href="https://github.com/wjin17"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                       >
                         <GithubIcon darkMode={darkMode} />
                       </a>
@@ -126,7 +130,7 @@ const Header = () => {
                       <a
                         href="https://www.linkedin.com/in/willjin1796/"
                         target="_blank"
-                        rel="noopener"
+                        rel="noopener noreferrer"
                       >
                         <LinkedInIcon darkMode={darkMode} />
                       </a>
@@ -151,59 +155,3 @@ const Header = () => {
 }
 
 export default Header
-/*
-<Popover className="fixed top-0 bg-white dark:bg-gray-900 w-full border-b-0 border-gray-500">
-      {({open})=>(
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="flex justify-between items-center py-2 md:justify-start md:space-x-10">
-          <div className="flex flex-1 py-3 items-center justify-start">
-            <div className="h-12 w-12">
-              <Link to="/">
-                <img src={"/me.png"} alt="cartoon me" />
-              </Link>
-            </div>
-          </div>
-          
-          <div className="flex flex-1 py-3 items-center justify-end">
-            <a
-              className="h-8 w-8 sm:h-8 mx-3"
-              href="https://github.com/wjin17"
-              target="_blank"
-              rel="noopener"
-            >
-              <GithubIcon darkMode={darkMode} />
-            </a>
-            <a
-              className="h-8 w-8 sm:h-8 mx-3"
-              href="https://www.linkedin.com/in/willjin1796/"
-              target="_blank"
-              rel="noopener"
-            >
-              <LinkedInIcon darkMode={darkMode} />
-            </a>
-            <a
-              href="/Willie.Jin.Resume.April.2021.pdf"
-              target="_blank"
-              rel="noopener"
-            >
-              <p className="text-black dark:text-white mx-3">Resume</p>
-            </a>
-            <Link to="/blog">
-              <p className="text-black dark:text-white mx-3 hover:underline">
-                Blog
-              </p>
-            </Link>
-            <div className="h-8 w-8 sm:h-10 mx-3 flex">
-              <button
-                className="mx-auto my-auto outline-none transition-opacity"
-                onClick={() => toggleDarkMode(!darkMode)}
-              >
-                {darkMode ? <SunIcon /> : <MoonIcon />}
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      )}
-    </Popover>
-*/
