@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react"
 
-const theme = localStorage.getItem("theme")
+const theme = typeof window !== "undefined" && localStorage.getItem("theme")
 
 export const themeContext = createContext<any>({})
 export const useTheme = () => useContext(themeContext)
