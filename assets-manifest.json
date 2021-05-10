@@ -1,4 +1,7 @@
 {
   "main.js": "render-page.js",
-  "render-page.js.map": "render-page.js.map"
+  "render-page.js.map": "render-page.js.map",
+  "static/Me.png": "static/Me-e080cd6cba30f9bfc23d6bc48f19ede1.png",
+  "static/Willie.Jin.Resume.April.2021.pdf": "static/Willie.Jin.Resume.April.2021-e08e4fda9b30a5d7d1eaf0b249f09858.pdf",
+  "static/me.png": "static/me-e080cd6cba30f9bfc23d6bc48f19ede1.png"
 }
